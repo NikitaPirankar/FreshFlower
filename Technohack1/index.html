@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFlower landing page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section>
+     
+        <div class="circle"></div>
+        <header>
+    
+        <span class="logo">Fresh Flower</span>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Order Now</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Flowers for your loved ones....</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima earum dolorem saepe porro beatae nisi impedit fugit?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ullam tenetur ut neque quia totam.
+                </p>
+                <a href="#">Know More</a>
+            </div>
+            <div class="imgbox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="photos/f2.jpg" width="300px" height="300px">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="photos/f1.jpg" width="300px" height="300px">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="photos/f3.jpg" width="300px" height="300px">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="photos/f4.jpg" width="300px" height="300px">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="photos/f5.jpg" width="300px" height="300px">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                      </div>
+                      </div>
+                
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+            </div> 
+
+      </div>
+        <ul class="social">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+            <li><i class="fa-brands fa-google"></i></li>
+            <li><i class="fa-brands fa-pinterest"></i></li>
+        </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+          effect: "flip",
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }  
+      
+    
+      </script>
+      </body>
+</html>
